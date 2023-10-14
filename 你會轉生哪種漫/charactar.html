@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="zn-tw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>你會轉生哪種漫？</title>
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/css.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="./img/icon.png" />
+  </head>
+
+  <body>
+    <!-- 首頁，用戶需要點擊按鈕才能進入作答 -->
+    <div id="no">
+      <img src="./img/background-4.png" />
+      <div class="no-page">
+        <p>請使用手機或電腦開啟</p>
+      </div>
+    </div>
+    <div class="index">
+      <div id="home">
+        <div id="musicpage">
+          <img src="./img/background-4.png" />
+          <div class="musicpage-button">
+            <h2>此測驗有搭配音樂<br />您可以開啟聲音獲得更佳的體驗~</h2>
+          </div>
+        </div>
+        <img class="word" src="./img/background-2.png" />
+        <img class="star" src="./img/star.png" />
+        <img class="down" src="./img/background-3.png" />
+        <div class="title-button">
+          <img class="title" src="./img/title.png" />
+          <button id="start-button">START</button>
+        </div>
+        <audio id="background-music" loop>
+          <source src="./music/Kazoom - Quincas Moreira.mp3" type="audio/mp3" />
+        </audio>
+      </div>
+      <div id="preface" style="display: none">
+        <div class="preface-icon">
+          <img src="./img/icon.png" />
+          <h1>我們致力於尋找您的命定角色</h1>
+          <h2>
+            本測驗為趣味導向<br />轉生經歷純屬虛構，如有雷同，算你倒楣<br />
+            準備好開啟旅程了嗎？
+          </h2>
+        </div>
+        <div class="preface-img">
+          <button id="ready">我準備好了!</button>
+        </div>
+      </div>
+      <form id="quiz-form" style="display: none">
+        <!-- 問題 -->
+        <div class="question one-q" data-question="1">
+          <p class="p-title">第1話 穿越??</p>
+          <p class="page">1/12</p>
+          <div class="mask">
+            <img src="./img/q-01.png" />
+          </div>
+          <img src="./img/01-1.gif" />
+          <div class="question-one">
+            <input
+              type="radio"
+              name="q1"
+              value="2"
+              data-next-question="2"
+              id="1"
+            /><label for="1"> 1.大聲呼救，到處尋求幫助</label>
+            <input
+              type="radio"
+              name="q1"
+              value="3"
+              data-next-question="2"
+              id="2"
+            /><label for="2">2.哈哈這一定是夢，敲暈自己</label>
+
+            <input
+              type="radio"
+              name="q1"
+              value="4"
+              data-next-question="2"
+              id="3"
+            /><label for="3">3.太讚了!我等這天等很久了</label>
+
+            <input
+              type="radio"
+              name="q1"
+              value="1"
+              data-next-question="2"
+              id="4"
+            /><label for="4">4.待在原地，試圖釐清處狀況</label>
+          </div>
+        </div>
+        <div class="question two-q" data-question="2" style="display: none">
+          <p class="p-title">第2話 神奇異世界</p>
+          <p class="page">2/12</p>
+          <img src="./img/02-1.gif" />
+          <div class="mask"><img src="./img/q-02.png" /></div>
+          <div class="blank"><h3>000</h3></div>
+          <div class="question-one">
+            <input
+              type="radio"
+              name="q2"
+              value="2"
+              data-next-question="3"
+              id="21"
+            /><label for="21">1.古老的上古部落</label>
+
+            <input
+              type="radio"
+              name="q2"
+              value="4"
+              data-next-question="3"
+              id="22"
+            /><label for="22">2.人只能用頭走路的奇妙世界</label>
+
+            <input
+              type="radio"
+              name="q2"
+              value="3"
+              data-next-question="3"
+              id="23"
+            /><label for="23">3.危險黑暗的森林中</label>
+
+            <input
+              type="radio"
+              name="q2"
+              value="1"
+              data-next-question="3"
+              id="24"
+            /><label for="24">4.人民善良友善的純樸鄉村</label>
+          </div>
+        </div>
+        <div class="question three-q" data-question="3" style="display: none">
+          <p class="p-title">第3話 緊急情況!!</p>
+          <p class="page">3/12</p>
+          <img src="./img/03-1.gif" />
+          <div class="mask"><img src="./img/q-03.png" /></div>
+          <div class="blank-2"><h3>000</h3></div>
+          <div class="question-one">
+            <input
+              type="radio"
+              name="q3"
+              value="200"
+              data-next-question="4"
+              id="31"
+            />
+            <label for="31">1.我做錯了什麼嗎?先跟著走好了</label>
+            <input
+              type="radio"
+              name="q3"
+              value="300"
+              data-next-question="4"
+              id="32"
+            />
+            <label for="32">2.想帶走我?拿出證據再說</label>
+            <input
+              type="radio"
+              name="q3"
+              value="400"
+              data-next-question="4"
+              id="33"
+            />
+            <label for="33">3.一言不發，找時機刺殺士兵</label>
+            <input
+              type="radio"
+              name="q3"
+              value="100"
+              data-next-question="4"
+              id="34"
+            />
+            <label for="34">4.士兵這麼辛苦還是乖乖跟著走好了</label>
+          </div>
+        </div>
+        <div class="question four-q" data-question="4" style="display: none">
+          <p class="p-title">第4話 這裡是.....</p>
+          <p class="page">4/12</p>
+          <img src="./img/4-1.gif" />
+          <div class="mask"><img src="./img/q-04.png" /></div>
+          <div class="blank"><h3>000</h3></div>
+          <div class="question-one">
+            <input
+              type="radio"
+              name="q4"
+              value="1"
+              data-next-question="5"
+              id="41"
+            />
+            <label for="41">1.富麗堂皇的城堡</label>
+            <input
+              type="radio"
+              name="q4"
+              value="2"
+              data-next-question="5"
+              id="42"
+            />
+            <label for="42">2.人聲鼎沸的羅馬競技場</label>
+            <input
+              type="radio"
+              name="q4"
+              value="3"
+              data-next-question="5"
+              id="43"
+            />
+            <label for="43">3.充滿天線寶寶的說你好成人樂園</label>
+            <input
+              type="radio"
+              name="q4"
+              value="4"
+              data-next-question="5"
+              id="44"
+            />
+            <label for="44">4.用生肉拼成的學校</label>
+          </div>
+        </div>
+        <div class="question five-q" data-question="5" style="display: none">
+          <p class="p-title">第5話 出發吧勇者~</p>
+          <p class="page">5/12</p>
+          <img src="./img/05-1.gif" />
+          <div class="mask"><img src="./img/q-05.png" /></div>
+          <div class="blank-3"><h3>000</h3></div>
+          <div class="question-one">
+            <input
+              type="radio"
+              name="q5"
+              value="1"
+              data-next-question="6"
+              id="51"
+            />
+            <label for="51">1.事以至此也沒有辦法了，只好坦然接受</label>
+            <input
+              type="radio"
+              name="q5"
+              value="2"
+              data-next-question="6"
+              id="52"
+            />
+            <label for="52">2.我無法承擔這麼大的責任，不能交給別人嗎</label>
+            <input
+              type="radio"
+              name="q5"
+              value="4"
+              data-next-question="6"
+              id="53"
+            />
+            <label for="53">3.天選之人！說的就是我本人，衝啊!</label>
+            <input
+              type="radio"
+              name="q5"
+              value="3"
+              data-next-question="6"
+              id="54"
+            />
+            <label for="54">4.太讚了!現成的駙馬爺就是我</label>
+          </div>
+        </div>
+        <div class="question six-q" data-question="6" style="display: none">
+          <p class="p-title">第6話 致勝關鍵</p>
+          <p class="page">6/12</p>
+          <img src="./img/06-1.gif" />
+          <div class="mask"><img src="./img/q-06.png" /></div>
+          <div class="blank"><h3>000</h3></div>
+          <div class="question-one">
+            <input
+              type="radio"
+              name="q6"
+              value="2"
+              data-next-question="7"
+              id="61"
+            />
+            <label for="61">1.愛與勇氣</label>
+            <input
+              type="radio"
+              name="q6"
+              value="4"
+              data-next-question="7"
+              id="62"
+            />
+            <label for="62">2.聽神奇海螺的話</label>
+            <input
+              type="radio"
+              name="q6"
+              value="3"
+              data-next-question="7"
+              id="63"
+            />
+            <label for="63">3.公主是我喜歡的類型</label>
+            <input
+              type="radio"
+              name="q6"
+              value="1"
+              data-next-question="7"
+              id="64"
+            />
+            <label for="64">4.默契滿分的好夥伴</label>
+          </div>
+        </div>
+        <div class="question seven-q" data-question="7" style="display: none">
+          <p class="p-title">第7話 救命啊!</p>
+          <p class="page">7/12</p>
+          <img src="./img/07-1.gif" />
+          <div class="mask"><img src="./img/q-07.png" /></div>
+          <div class="blank-2"><h3>000</h3></div>
+          <div class="question-one">
+            <input
+              type="radio"
+              name="q7"
+              value="100"
+              data-next-question="8"
+              id="71"
+            />
+            <label for="71">1.太可憐了立刻上前幫助他</label>
+            <input
+              type="radio"
+              name="q7"
+              value="300"
+              data-next-question="8"
+              id="72"
+            />
+            <label for="72">2.於我無關，繼續趕路</label>
+            <input
+              type="radio"
+              name="q7"
+              value="400"
+              data-next-question="8"
+              id="73"
+            />
+            <label for="73">3.再插一刀送他上路</label>
+            <input
+              type="radio"
+              name="q7"
+              value="200"
+              data-next-question="8"
+              id="74"
+            />
+            <label for="74">4.看著很可憐但我不是醫生，找其他人來幫忙</label>
+          </div>
+        </div>
+        <div class="question eight-q" data-question="8" style="display: none">
+          <p class="p-title">第8話 買什麼呢?</p>
+          <p class="page">8/12</p>
+          <img src="./img/08-1.gif" />
+          <div class="mask"><img src="./img/q-08.png" /></div>
+          <div class="blank"><h3>000</h3></div>
+          <div class="question-one">
+            <input
+              type="radio"
+              name="q8"
+              value="2"
+              data-next-question="9"
+              id="81"
+            />
+            <label for="81">1.讓人被迷惑的玫瑰花束</label>
+            <input
+              type="radio"
+              name="q8"
+              value="4"
+              data-next-question="9"
+              id="82"
+            />
+            <label for="82">2.讓人長出第三隻眼睛的神奇藥水</label>
+            <input
+              type="radio"
+              name="q8"
+              value="3"
+              data-next-question="9"
+              id="83"
+            />
+            <label for="83">3.可以找到海鮮寶寶的藏寶圖</label>
+            <input
+              type="radio"
+              name="q8"
+              value="1"
+              data-next-question="9"
+              id="84"
+            />
+            <label for="84">4.能治癒傷口的神奇魔法</label>
+          </div>
+        </div>
+        <div class="question nine-q" data-question="9" style="display: none">
+          <p class="p-title">第9話 BOSS戰!</p>
+          <p class="page">9/12</p>
+          <img src="./img/09-1.gif" />
+          <div class="mask"><img src="./img/q-09.png" /></div>
+          <div class="blank"><h3>000</h3></div>
+          <div class="question-one">
+            <input
+              type="radio"
+              name="q9"
+              value="200"
+              data-next-question="10"
+              id="91"
+            />
+            <label for="91">1.一邊閃避一邊溫情喊話</label>
+            <input
+              type="radio"
+              name="q9"
+              value="300"
+              data-next-question="10"
+              id="92"
+            />
+            <label for="92">2.嘗試收服魔龍，讓他變成你的僕人</label>
+            <input
+              type="radio"
+              name="q9"
+              value="100"
+              data-next-question="10"
+              id="93"
+            />
+            <label for="93">3.拿出寶劍纏鬥</label>
+            <input
+              type="radio"
+              name="q9"
+              value="400"
+              data-next-question="10"
+              id="94"
+            />
+            <label for="94">4.先弄瞎魔龍，再大卸八塊讓他痛不欲生 </label>
+          </div>
+        </div>
+        <div class="question ten-q" data-question="10" style="display: none">
+          <p class="p-title">第10話 怎麼回事?</p>
+          <p class="page">10/12</p>
+          <img src="./img/10-1.gif" />
+          <div class="mask"><img src="./img/q-10.png" /></div>
+          <div class="blank"><h3>000</h3></div>
+          <div class="question-one">
+            <input
+              type="radio"
+              name="q10"
+              value="300"
+              data-next-question="11"
+              id="101"
+            />
+            <label for="101">1.二話不說將他封印</label>
+            <input
+              type="radio"
+              name="q10"
+              value="100"
+              data-next-question="11"
+              id="102"
+            />
+            <label for="102">2.心軟原諒他，努力感化他</label>
+            <input
+              type="radio"
+              name="q10"
+              value="400"
+              data-next-question="11"
+              id="103"
+            />
+            <label for="103">3.為除後患去之而後快</label>
+            <input
+              type="radio"
+              name="q10"
+              value="200"
+              data-next-question="11"
+              id="104"
+            />
+            <label for="104">4.放他一馬但疑惑地上怎麼會有香蕉皮?</label>
+          </div>
+        </div>
+        <div class="question eleven-q" data-question="11" style="display: none">
+          <p class="p-title">第11話 公主駕到</p>
+          <p class="page">11/12</p>
+          <img src="./img/11-1.gif" />
+          <div class="mask"><img src="./img/q-11.png" /></div>
+          <div class="blank"><h3>000</h3></div>
+          <div class="question-one">
+            <input
+              type="radio"
+              name="q11"
+              value="100"
+              data-next-question="12"
+              id="111"
+            />
+            <label for="111">1.馬上尋問公主狀況，並將她帶離洞穴</label>
+            <input
+              type="radio"
+              name="q11"
+              value="300"
+              data-next-question="12"
+              id="112"
+            />
+            <label for="112">2.這一定是陷阱，檢查他身上是否有魔法印記</label>
+            <input
+              type="radio"
+              name="q11"
+              value="400"
+              data-next-question="12"
+              id="113"
+            />
+            <label for="113">3.太可惜了，悻悻然收起三十米大刀</label>
+            <input
+              type="radio"
+              name="q11"
+              value="200"
+              data-next-question="12"
+              id="114"
+            />
+            <label for="114">4.天啊! 居然是公主，向她道歉</label>
+          </div>
+        </div>
+        <div class="question twelve-q" data-question="12" style="display: none">
+          <p class="p-title">第12話 Happy ending</p>
+          <p class="page">12/12</p>
+          <img src="./img/12-1.gif" />
+          <div class="mask"><img src="./img/q-12.png" /></div>
+          <div class="blank"><h3>000</h3></div>
+          <div class="question-one">
+            <input
+              type="radio"
+              name="q12"
+              value="98"
+              data-next-question="13"
+              id="121"
+            />
+            <label for="121">1.尋找伴侶並平穩的相守到老</label>
+            <input
+              type="radio"
+              name="q12"
+              value="300"
+              data-next-question="13"
+              id="122"
+            />
+            <label for="122">2.追尋權力與地位，受萬人景仰</label>
+            <input
+              type="radio"
+              name="q12"
+              value="199"
+              data-next-question="13"
+              id="123"
+            />
+            <label for="123">3.一人自由自在闖蕩，擁有豐富人生和朋友</label>
+            <input
+              type="radio"
+              name="q12"
+              value="97"
+              data-next-question="13"
+              id="124"
+            />
+            <label for="124">4.保護老弱婦孺讓世界充滿愛</label>
+            <input
+              type="radio"
+              name="q12"
+              value="400"
+              data-next-question="13"
+              id="125"
+            />
+            <label for="125">5.尋找時機刺殺國王，成為不可一世的暴君</label>
+            <input
+              type="radio"
+              name="q12"
+              value="202"
+              data-next-question="13"
+              id="126"
+            />
+            <label for="126">6.派大星附身，我怎麼過日子，不關你的事！</label>
+          </div>
+        </div>
+        <div
+          class="question thirteen-q"
+          data-question="13"
+          style="display: none"
+          id="submit"
+        >
+          <img class="s-background" src="./img/background-5.png" />
+          <audio id="submit-music">
+            <source
+              src="./music/Celebration Sound Effect 慶祝音效.mp3"
+              type="audio/mp3"
+            />
+          </audio>
+          <div class="anwer-page">
+            <img class="advertise" src="./img/廣告.gif" />
+            <h3>立即查看結果</h3>
+            <div class="anwer-button">
+              <img class="head" src="./img/大頭貼.png" />
+              <input
+                type="submit"
+                value="最終話"
+                data-next-question="14"
+                id="answer"
+              />
+              <img class="poly" src="./img/Polygon 1.png" />
+            </div>
+          </div>
+        </div>
+      </form>
+      <!-- 顯示結果的區域 -->
+      <div id="result" style="display: none">
+        <p id="score"></p>
+        <p id="interpretation"></p>
+        <img id="result-image" style="display: none" />
+        <div class="result-down">
+          <div class="result-button">
+            <img class="head" src="./img/大頭貼-2.png" />
+            <button id="restart-button">[再測一次]<br />回到第一話</button>
+            <img class="poly" src="./img/Polygon 1.png" />
+          </div>
+          <div class="restart-button-group">
+            <button id="instergram">分享結果</button>
+            <a id="download" download="你會轉生哪種漫?">下載圖片</a>
+          </div>
+          <img class="vcd-logo" src="./img/logo_1.png" />
+        </div>
+        <div class="loading">
+          <img src="./img/star.png" />
+          <p class="p-loading">您即將轉生成...</p>
+        </div>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
