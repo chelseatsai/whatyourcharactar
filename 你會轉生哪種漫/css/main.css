@@ -47,7 +47,6 @@ audio {
   width: 80%;
   height: 80%;
   position: absolute;
-
   animation: background-img 10s ease-in-out infinite;
   z-index: 1;
 }
@@ -92,15 +91,15 @@ audio {
 }
 @keyframes musicbuttom {
   0% {
-    display: block;
+    visibility: visible;
     opacity: 1;
   }
   90% {
-    display: block;
+    visibility: visible;
     opacity: 1;
   }
   100% {
-    display: none;
+    visibility: hidden;
     opacity: 0;
   }
 }
@@ -164,8 +163,7 @@ audio {
   margin-top: 45%;
   position: absolute;
   bottom: 0%;
-
-  z-index: 3;
+  z-index: 2;
 }
 #home .title-button {
   position: absolute;
@@ -236,7 +234,7 @@ audio {
 #home .word {
   width: 80%;
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   left: 10%;
   animation: background-img-2 10s ease-in-out infinite;
 }
