@@ -67,28 +67,6 @@ audio {
     margin: 0vh 9% 20px;
   }
 }
-@keyframes musicbuttom-h2 {
-  0% {
-    margin: 10% 25% 20px;
-    color: #000;
-  }
-  25% {
-    margin: 10% 24% 20px;
-    color: white;
-  }
-  50% {
-    margin: 10% 25% 20px;
-    color: #000;
-  }
-  75% {
-    margin: 10% 24% 20px;
-    color: white;
-  }
-  100% {
-    margin: 10% 25% 20px;
-    color: #000;
-  }
-}
 @keyframes musicbuttom {
   0% {
     visibility: visible;
@@ -160,7 +138,6 @@ audio {
 }
 #home .down {
   width: 100%;
-  margin-top: 45%;
   position: absolute;
   bottom: 0%;
   z-index: 2;
@@ -233,7 +210,6 @@ audio {
 }
 #home .word {
   width: 80%;
-  height: 100%;
   position: absolute;
   z-index: 1;
   left: 10%;
@@ -763,7 +739,7 @@ audio {
   text-align: center;
   font-size: 16px;
   color: white;
-  margin: 47vh 25% 0;
+  margin: 45vh 25% 0;
   animation: loading-move 1s ease-in-out infinite;
 }
 #result .loading img {
@@ -788,7 +764,13 @@ audio {
 }
 
 /*平板*/
-@media (max-width: 950px) {
+@media (max-width: 1000px) {
+  .index {
+    display: none;
+  }
+  #no {
+    display: block;
+  }
   #no img {
     width: 80%;
     height: 80%;
@@ -881,7 +863,7 @@ audio {
     height: 80%;
     position: absolute;
 
-    animation: background-img 10s ease-in-out infinite;
+    animation: background-img 8s ease-in-out forwards;
     z-index: 1;
   }
   @keyframes musicbuttom-p {
@@ -903,15 +885,15 @@ audio {
   }
   @keyframes musicbuttom {
     0% {
-      display: block;
+      visibility: visible;
       opacity: 1;
     }
     90% {
-      display: block;
+      visibility: visible;
       opacity: 1;
     }
     100% {
-      display: none;
+      visibility: hidden;
       opacity: 0;
     }
   }
@@ -920,24 +902,29 @@ audio {
       opacity: 0.5;
       top: 10%;
       left: 10%;
+      visibility: visible;
     }
     25% {
       opacity: 1;
-      top: 8%;
-      left: 5%;
+      top: 9%;
+      left: 11%;
+      visibility: visible;
     }
     50% {
       opacity: 0;
-      top: 6%;
-      left: 12%;
+      top: 8%;
+      left: 10%;
+      visibility: visible;
     }
     75% {
       opacity: 1;
-      top: 7%;
-      left: 8%;
+      top: 9%;
+      left: 9%;
+      visibility: visible;
     }
     100% {
-      opacity: 0.5;
+      opacity: 0;
+      visibility: hidden;
       top: 10%;
       left: 10%;
     }
@@ -983,7 +970,7 @@ audio {
     width: 100%;
     height: 100%;
     top: 0%;
-    z-index: 10;
+    z-index: 100;
   }
   #home .title-button img {
     width: 50%;
@@ -1006,6 +993,8 @@ audio {
     padding: 2px 0;
     margin: 0 25%;
     animation: home-button 2s ease-in-out infinite;
+    touch-action: manipulation;
+    cursor: pointer;
   }
   #home button:hover {
     background-color: #000000;

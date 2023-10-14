@@ -19,8 +19,6 @@ startButton.addEventListener("click", function () {
   // 隱藏首頁，顯示測驗表單
   homePage.style.display = "none";
   preface.style.display = "block";
-  // 開始測驗，顯示第一個問題
-  showNextQuestion();
 });
 
 var music = document.getElementById("background-music");
@@ -73,7 +71,6 @@ ready.addEventListener("click", function () {
   preface.style.display = "none";
   quizForm.style.display = "block";
   // 開始測驗，顯示第一個問題
-  showNextQuestion();
 });
 answer.addEventListener("click", function () {
   // 隱藏提交，顯示結果
@@ -391,7 +388,7 @@ function calculateAndDisplayResult() {
 // 當按鈕被點擊時，執行導航函數
 instergram.addEventListener("click", function () {
   // 使用 window.location.href 進行網頁導航
-  window.open("https://www.instagram.com/", "_blank");
+  window.location.href = "https://www.instagram.com/";
 });
 
 // 添加重新测试按钮的点击事件
