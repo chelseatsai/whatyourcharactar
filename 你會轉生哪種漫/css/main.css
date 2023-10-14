@@ -50,7 +50,86 @@ audio {
   animation: background-img 10s ease-in-out infinite;
   z-index: 1;
 }
-
+@keyframes musicbuttom-p {
+  0% {
+    margin: 30vh 10% 20px;
+  }
+  25% {
+    margin: 31vh 11% 20px;
+  }
+  50% {
+    margin: 29vh 9% 20px;
+  }
+  75% {
+    margin: 31vh 12% 20px;
+  }
+  100% {
+    margin: 0vh 9% 20px;
+  }
+}
+@keyframes musicbuttom-h2 {
+  0% {
+    margin: 10% 25% 20px;
+    color: #000;
+  }
+  25% {
+    margin: 10% 24% 20px;
+    color: white;
+  }
+  50% {
+    margin: 10% 25% 20px;
+    color: #000;
+  }
+  75% {
+    margin: 10% 24% 20px;
+    color: white;
+  }
+  100% {
+    margin: 10% 25% 20px;
+    color: #000;
+  }
+}
+@keyframes musicbuttom {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  90% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+@keyframes background-img {
+  0% {
+    opacity: 0.5;
+    top: 10%;
+    left: 10%;
+  }
+  25% {
+    opacity: 1;
+    top: 8%;
+    left: 5%;
+  }
+  50% {
+    opacity: 0;
+    top: 6%;
+    left: 10%;
+  }
+  75% {
+    opacity: 1;
+    top: 7%;
+    left: 8%;
+  }
+  100% {
+    opacity: 0.5;
+    top: 10%;
+    left: 10%;
+  }
+}
 /*home*/
 #home {
   width: 100%;
@@ -149,23 +228,7 @@ audio {
   left: 10%;
   animation: background-img-2 10s ease-in-out infinite;
 }
-@keyframes background-img-2 {
-  0% {
-    top: 5%;
-  }
-  25% {
-    top: 6%;
-  }
-  50% {
-    top: 4%;
-  }
-  75% {
-    top: 6%;
-  }
-  100% {
-    top: 5%;
-  }
-}
+
 /*home*/
 #preface {
   z-index: 20;
