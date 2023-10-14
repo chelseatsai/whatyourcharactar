@@ -15,7 +15,7 @@ const instergram = document.getElementById("instergram");
 let currentQuestionIndex = 0;
 let score = 0;
 
-startButton.addEventListener("touchstart", function () {
+startButton.addEventListener("click", function () {
   // 隱藏首頁，顯示測驗表單
   homePage.style.display = "none";
   preface.style.display = "block";
