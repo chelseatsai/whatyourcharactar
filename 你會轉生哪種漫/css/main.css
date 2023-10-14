@@ -205,6 +205,17 @@ audio {
   padding: 2px 0;
   animation: home-button 2s ease-in-out infinite;
 }
+@keyframes home-button {
+  0% {
+    margin: 0 24% 0 26%;
+  }
+  50% {
+    margin: 0 26% 0 24%;
+  }
+  100% {
+    margin: 0 24% 0 26%;
+  }
+}
 
 #home button:hover {
   background-color: #000000;
@@ -222,13 +233,29 @@ audio {
 }
 #home .word {
   width: 80%;
-  height: 80%;
+  height: 100%;
   position: absolute;
   z-index: 1;
   left: 10%;
   animation: background-img-2 10s ease-in-out infinite;
 }
-
+@keyframes background-img-2 {
+  0% {
+    top: 5%;
+  }
+  25% {
+    top: 6%;
+  }
+  50% {
+    top: 4%;
+  }
+  75% {
+    top: 6%;
+  }
+  100% {
+    top: 5%;
+  }
+}
 /*home*/
 #preface {
   z-index: 20;
@@ -762,12 +789,6 @@ audio {
 
 /*平板*/
 @media (max-width: 950px) {
-  .index {
-    display: none;
-  }
-  #no {
-    display: block;
-  }
   #no img {
     width: 80%;
     height: 80%;
