@@ -388,7 +388,8 @@ function calculateAndDisplayResult() {
 // 當按鈕被點擊時，執行導航函數
 instergram.addEventListener("click", function () {
   // 使用 window.location.href 進行網頁導航
-  window.location.href = "https://www.instagram.com/";
+  window.location.href =
+    "https://instagram.com/whats_your_character_2023?igshid=NGVhN2U2NjQ0Yg==";
 });
 
 // 添加重新测试按钮的点击事件
