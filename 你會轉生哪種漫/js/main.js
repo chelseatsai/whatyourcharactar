@@ -255,7 +255,7 @@ function calculateAndDisplayResult() {
     downloada.href = "./img/少女1.png";
   } else if ((score = 606)) {
     downloada.href = "./img/大姊姊.png";
-  } else {
+  } else if (score >= 0) {
     downloada.href = "./img/一般人.png";
   }
 
@@ -374,7 +374,7 @@ function calculateAndDisplayResult() {
     resultImage.src = "./img/少女1.png";
   } else if ((score = 606)) {
     resultImage.src = "./img/大姊姊.png";
-  } else {
+  } else if (score > 0) {
     resultImage.src = "./img/一般人.png";
   }
 
