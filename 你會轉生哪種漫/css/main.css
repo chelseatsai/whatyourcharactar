@@ -1381,6 +1381,7 @@ audio {
   #result .result-down .vcd-logo {
     width: 90%;
     height: auto;
+    font-size: 12px;
     margin: 20% 5% 0;
   }
   .result-button {
