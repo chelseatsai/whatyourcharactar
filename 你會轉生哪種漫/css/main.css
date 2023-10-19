@@ -1529,8 +1529,19 @@ audio {
     position: absolute;
     padding: 0 15%;
     top: calc(50vh - 35vw);
-    animation: rotate 5s ease-in-out infinite;
+    animation: rotate-loading 8s ease-in-out forwards;
     z-index: 3;
+  }
+  @keyframes rotate-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
   @keyframes loading-move {
     0% {
